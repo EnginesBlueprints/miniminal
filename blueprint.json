@@ -1,41 +1,19 @@
 {
-  "schema": {
-    "type": "app_blueprint",
-    "version": {
-      "major": 0,
-      "minor": 1
+  "version": {
+    "url": "https://github.com/jvodan/hello_world.git",
+    "descriptor": {
+      "name": "hello_world"
     },
-    "origin": "Engines Developer Studio 0.2"
-  },
-  "metadata": {
-    "blueprint": {
-      "version": {
-        "major": 0,
-        "minor": 0,
-        "level": "alpha",
-        "patch": 0
-      }
-    },
-    "timestamp": "2019-12-10T08:37:03+11:00"
-  },
-  "software": {
-    "base": {
-      "name": "mini",
-      "framework": "apache_php",
-      "deployment_type": "web",
-      "http_protocol": "https_and_http",
-      "memory": {
+    "software": {
+      "title": "mini",
+      "memory_usage": {
         "required": 64,
         "recommended": 103
-      }
-    },
-    "installed_packages": [
-      {
-        "name": "hello_world",
-        "download_type": "git",
-        "source_url": "https://github.com/jvodan/hello_world.git",
-        "path_to_extracted": "hello_world/hello"
-      }
-    ]
+      },
+      "framework": {
+        "label": "apache_php"
+      },
+      "protocol": "https_and_http"
+    }
   }
 }
